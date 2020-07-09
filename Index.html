@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Contact Management App</h1>
+
+    <div class="table-container" id="myTableContainer">
+        <div class="table-row">
+            <div class="table-column fname header">First Name</div>
+            <div class="table-column lname header">Last Name</div>
+            <div class="table-column birthday header">Birthday</div>
+            <div class="table-column number header">Phone</div>
+            <div class="table-column email header">Email</div>
+            <div class="table-column address header">Address</div>
+            <div class="table-column header add-entry" id="addNewEntry">+</div>
+        </div>
+        <span id = "tableBody"></span>
+    </div>
+
+    <div class = "disable-modal" id = "backdrop"></div>
+    <div class="disable-modal" id="newPersonModal">
+    <h1>Add New Person</h1>
+    <div class="row">
+        <div class="col-25">
+        <label for="fname">*First Name</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+        <label for="lname">*Last Name</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="birthday">*Date of Birth:</label>
+        </div>
+        <div class="col-75">
+            <input type="date" id="birthday" name="birthday" placeholder="Enter Date of Birth">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="phone">*Phone number:</label>
+        </div>
+        <div class="col-75">
+            <input type="number" id="number" name="number" placeholder="Enter Phone Number">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="email">*Email:</label>
+        </div>
+        <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+            <label for="address">Address:</label><br>
+        </div>
+        <div class="col-75">
+            <input type="text" id="address" name="address" placeholder="Enter Address">
+        </div>
+    </div>
+    <p>*Required fields</p>
+    <div class="row">
+        <input type="button" value="Cancel" id = "newPersonCancelBtn">
+        <input type="button" value="Submit" id = "newPersonSubmitBtn">
+    </div>
+    </div>
+
+    <button id="clearBtn" style="position: absolute; right: 0px; bottom: 0px;">Clear Local Storage</button>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

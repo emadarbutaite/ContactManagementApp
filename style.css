@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table-container {
+    width: 95%;
+    margin: auto;
+}
+
+.table-row {
+    display: flex;
+}
+
+.table-column { 
+    background-color: #f2f2f2;
+    margin: 2px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header {
+    background-color: #bdbdbd;
+    font-weight: bold;
+}
+
+.fname, .lname{
+    flex-basis: 15%;
+}
+
+.birthday, .number {
+    flex-basis: 10%;
+}
+
+.email, .address {
+    flex-basis: 18%;
+}
+
+.edit, .delete, .add-entry {
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#newPersonModal {
+    width: 700px;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 99;
+    top: 50px;
+    position: absolute;
+    margin-left: calc(50% - 350px);
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=button] {
+    background-color: #4287f5;
+    color: white;
+    padding: 12px 20px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=button]:hover, li:hover {
+    background-color: #2f64ba;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.disable-modal {
+    visibility: hidden;
+}
+
+.enable-modal {
+    visibility: visible;
+}
+
+i {
+    pointer-events: none;
+}
+
+.input-err {
+    background-color: #ffa7a7;
+}
